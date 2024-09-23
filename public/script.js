@@ -41,7 +41,7 @@ async function loadRecord(id) {
 
 function displayRecord(record) {
     const content = document.getElementById('content');
-    let html = '<h2>' + (record.Name || record.Title || 'Untitled') + '</h2>';
+    let html = '<h2>' + (record.Name || record.Title || 'بدون عنوان') + '</h2>';
     
     for (const [key, value] of Object.entries(record)) {
         if (key !== 'id' && key !== 'Name' && key !== 'Title') {
